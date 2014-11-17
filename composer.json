@@ -1,0 +1,16 @@
+{
+    "name": "fweber/howto-fweber",
+    "description": "How-To Website",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weber, Florian",
+            "email": "florian.weber.dd@icloud.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "~1.2",
+        "twig/twig": "~1.0",
+        "symfony/twig-bridge": "~2.5"
+    }
+}
