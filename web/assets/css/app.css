@@ -1,0 +1,164 @@
+/*
+ * howto.fweber.info
+ * Main CSS
+ *
+ * (c) Florian Weber
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #f5f5f5;
+    font-size: 20px;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+#footer {
+    height: 60px;
+    background-color: #dddddd;
+}
+
+/*
+ * o
+ */
+
+.o-header-container {
+    background-color: #269abc;
+}
+
+.o-navigation-container {
+    background-color: #d9534f;
+}
+
+.o-content-container {
+}
+
+/* footer */
+.o-footer {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.o-footer a:link {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.o-footer a:hover {
+    color: #000000;
+}
+
+/* logo */
+.o-logo {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.o-logo-header h1 {
+    font-size: 90px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.o-logo-header h1 small {
+    font-size: 30px;
+}
+
+/* content */
+.o-content {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 25px;
+}
+
+.o-content a:link {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.o-content a:hover {
+    color: #000000;
+}
+
+.o-content a:visited {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+a.o-file-link:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a.o-file-link:hover {
+    color: #d9534f;
+}
+
+a.o-file-link:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* NAV */
+ul.o-nav {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.o-nav li {
+    float: left;
+    margin-right: 115px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 45px;
+    padding-bottom: 3px;
+}
+
+ul.o-nav li.o-active > a {
+    color: #ffffff;
+}
+
+ul.o-nav li a:hover {
+    color: #ffffff;
+}
+
+ul.o-nav a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* POST */
+.o-post-date {
+    font-size: 16px;
+    text-align: right;
+    padding-top: 10px;
+    border-top: 1px solid #dddddd;
+    margin-top: 19px;
+}
+
+/*
+ * Fonts
+ */
+
+.o-font-pt-sans-narrow {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.o-font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.o-font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.o-font-open-sans-condensed {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
