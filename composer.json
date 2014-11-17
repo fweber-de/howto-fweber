@@ -12,6 +12,12 @@
         "silex/silex": "~1.2",
         "twig/twig": "~1.0",
         "symfony/twig-bridge": "~2.5",
-        "symfony/finder": "~2.5"
+        "symfony/finder": "~2.5",
+        "symfony/console": "~2.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
     }
 }
