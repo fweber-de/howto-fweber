@@ -1,3 +1,4 @@
 /vendor/
 /.idea/
-/posts/
+/posts/*
+!/posts/.gitkeep

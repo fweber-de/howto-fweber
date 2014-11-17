@@ -25,12 +25,17 @@ body {
     background-color: #dddddd;
 }
 
+h1 > small {
+    color: #ffffff;
+}
+
 /*
  * o
  */
 
 .o-header-container {
     background-color: #269abc;
+    padding-left: 15px;
 }
 
 .o-navigation-container {
