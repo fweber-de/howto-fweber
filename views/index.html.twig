@@ -2,6 +2,12 @@
 
 {% block content %}
 
-    Posts
+    <h2>Posts</h2>
+
+    <ul>
+        {% for post in posts %}
+            <li>{{ post }}</li>
+        {% endfor %}
+    </ul>
 
 {% endblock %}

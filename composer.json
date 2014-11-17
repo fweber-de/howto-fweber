@@ -11,6 +11,7 @@
     "require": {
         "silex/silex": "~1.2",
         "twig/twig": "~1.0",
-        "symfony/twig-bridge": "~2.5"
+        "symfony/twig-bridge": "~2.5",
+        "symfony/finder": "~2.5"
     }
 }
