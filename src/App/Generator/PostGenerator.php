@@ -53,12 +53,12 @@ class PostGenerator
 
         $filename = str_replace('[DATETIME]', $datetime, str_replace('[SLUG]', $slug, $filenamePattern));
 
-        $content = 'title: ' . $title . PHP_EOL;
+        $content = '---' . PHP_EOL;
+        $content .= 'title: ' . $title . PHP_EOL;
+        $content .= 'slug: ' . $slug . PHP_EOL;
         $content .= 'date: ' . $dt->format('Y-m-d') . PHP_EOL;
         $content .= 'time: ' . $dt->format('G:i:s') . PHP_EOL;
-        $content .= PHP_EOL;
-        $content .= '--';
-        $content .= PHP_EOL;
+        $content .= '---' . PHP_EOL;
 
         file_put_contents($folder . '/' . $filename, $content);
 
