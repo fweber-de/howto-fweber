@@ -2,12 +2,23 @@
 
 {% block content %}
 
-    <h2>Posts</h2>
+    {% if posts|length == 0 %}
+        <h3>No posts found!</h3>
+    {% else %}
 
-    <ul>
+        <h2>Posts</h2>
+
         {% for post in posts %}
-            <li>{{ post.title }}</li>
+            <div class="media">
+                <div class="media-body">
+                    <h3 class="media-heading">
+                        <a href="{{ path('post', {slug: post.slug}) }}">{{ post.title }}</a>
+                    </h3>
+                    <small>{{ post.date|date('d.m.Y G:i') }}</small>
+                </div>
+            </div>
         {% endfor %}
-    </ul>
+
+    {% endif %}
 
 {% endblock %}

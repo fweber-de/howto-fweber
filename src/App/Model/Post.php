@@ -10,6 +10,11 @@ class Post
     private $title;
 
     /**
+     * @var string
+     */
+    private $slug;
+
+    /**
      * @var \DateTime
      */
     private $date;
@@ -96,6 +101,25 @@ class Post
     public function setRawContent($rawContent)
     {
         $this->rawContent = $rawContent;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param $slug
+     * @return $this
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
 
         return $this;
     }

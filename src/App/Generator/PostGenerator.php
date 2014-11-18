@@ -57,7 +57,7 @@ class PostGenerator
         $content .= 'title: ' . $title . PHP_EOL;
         $content .= 'slug: ' . $slug . PHP_EOL;
         $content .= 'date: ' . $dt->format('Y-m-d') . PHP_EOL;
-        $content .= 'time: ' . $dt->format('G:i:s') . PHP_EOL;
+        $content .= 'time: ' . $dt->format('G-i-s') . PHP_EOL;
         $content .= '---' . PHP_EOL;
 
         file_put_contents($folder . '/' . $filename, $content);
@@ -66,7 +66,8 @@ class PostGenerator
         $post->setDate($dt)
             ->setRawContent($content)
             ->setText(null)
-            ->setTitle($title);
+            ->setTitle($title)
+            ->setSlug($slug);
 
         return $post;
     }

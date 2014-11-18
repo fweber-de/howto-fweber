@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <ol class="breadcrumb">
+        <li><a href="{{ path('root') }}">Posts</a></li>
+        <li class="active">Post</li>
+    </ol>
+
+    <small class="pull-right">{{ post.date|date('d.m.Y G:i') }}</small>
+
+    <h1>
+        {{ post.title }}
+    </h1>
+
+    {{ post.text|raw }}
+
+{% endblock %}

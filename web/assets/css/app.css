@@ -29,6 +29,10 @@ h1 > small {
     color: #ffffff;
 }
 
+.breadcrumb {
+    background-color: #1F1F24;
+}
+
 /*
  * o
  */

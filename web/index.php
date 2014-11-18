@@ -34,6 +34,21 @@ $app->get(
     }
 )->bind('root');
 
+$app->get(
+    '/post/{slug}',
+    function ($slug) use ($app) {
+
+        $post = (new \App\Model\PostRepository())->getOneBySlug($slug);
+
+        return $app['twig']->render(
+            'post.html.twig',
+            array(
+                'post' => $post
+            )
+        );
+    }
+)->bind('post');
+
 $app['debug'] = false;
 
 $app->run();
