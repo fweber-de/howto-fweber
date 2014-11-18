@@ -9,10 +9,12 @@
 
     <small class="pull-right">{{ post.date|date('d.m.Y G:i') }}</small>
 
-    <h1>
-        {{ post.title }}
-    </h1>
+    <div class="o-post">
+        <h1>
+            {{ post.title }}
+        </h1>
 
-    {{ post.text|raw }}
+        {{ post.text|raw }}
+    </div>
 
 {% endblock %}

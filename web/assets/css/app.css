@@ -33,6 +33,11 @@ h1 > small {
     background-color: #1F1F24;
 }
 
+.anchor-link {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
 /*
  * o
  */
