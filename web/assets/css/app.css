@@ -167,6 +167,11 @@ ul.o-nav a:link {
     border-bottom: 1px solid #DDDDDD;
 }
 
+.o-post img {
+    margin-bottom: 19px;
+   /* margin-top: 19px;*/
+}
+
 /*
  * Fonts
  */
