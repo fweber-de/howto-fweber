@@ -9,7 +9,6 @@ time: 13-59-29
 Symfony Download Page aufrufen
 
 <img src="https://farm6.staticflickr.com/5608/15634347050_5d0616c196_o.png" width="1369" height="651" alt="1_symfony_com">  
-<br>
 
 Aktuellen `composer` Pfad markieren und kopieren
 
@@ -20,12 +19,10 @@ Aktuellen `composer` Pfad markieren und kopieren
 CMD, Powershell oder Git-Bash in `htdocs` oder einem Unterverzeichnis öffnen.
 
 <img src="https://farm6.staticflickr.com/5615/15199235084_7082b9c018_o.png" width="1241" height="437" alt="3_open_shell">
-<br>
 
 kopierten Pfad einsetzen und `path/` durch gewünschten Ordnernamen ersetzen
 
 <img src="https://farm8.staticflickr.com/7504/15820759002_9b6f0bd780_o.png" width="668" height="335" alt="4__insert_path">
-<br>
 <img src="https://farm9.staticflickr.com/8396/15199762013_f1802fa730_o.png" width="676" height="337" alt="5_change_path_to_foldername">
 
 ## Composer ausführen & Parameter füllen
