@@ -14,7 +14,7 @@
                     <h3 class="media-heading">
                         <a href="{{ path('post', {slug: post.slug}) }}">{{ post.title }}</a>
                     </h3>
-                    <small>{{ post.date|date('d.m.Y G:i') }}</small>
+                    <small>{{ post.date|date('d.m.Y H:i') }}</small>
                 </div>
             </div>
         {% endfor %}

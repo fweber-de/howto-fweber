@@ -48,7 +48,7 @@ class PostGenerator
         $filenamePattern = '[DATETIME]_[SLUG].md';
 
         $dt = new \DateTime('now');
-        $datetime = $dt->format('Y-m-d_G-i');
+        $datetime = $dt->format('Y-m-d_H-i');
         $slug = $this->slugify($title);
 
         $filename = str_replace('[DATETIME]', $datetime, str_replace('[SLUG]', $slug, $filenamePattern));
@@ -57,7 +57,7 @@ class PostGenerator
         $content .= 'title: ' . $title . PHP_EOL;
         $content .= 'slug: ' . $slug . PHP_EOL;
         $content .= 'date: ' . $dt->format('Y-m-d') . PHP_EOL;
-        $content .= 'time: ' . $dt->format('G-i-s') . PHP_EOL;
+        $content .= 'time: ' . $dt->format('H-i-s') . PHP_EOL;
         $content .= '---' . PHP_EOL;
 
         file_put_contents($folder . '/' . $filename, $content);
