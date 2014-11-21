@@ -157,6 +157,16 @@ ul.o-nav a:link {
     margin-top: 19px;
 }
 
+.o-post h1, .o-post h2 {
+    padding-bottom: 10px;
+}
+
+.o-post {
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
 /*
  * Fonts
  */
