@@ -6,14 +6,14 @@
         <h3>No posts found!</h3>
     {% else %}
 
-        <h2>Posts</h2>
+        <h1>Posts</h1>
 
         {% for post in posts %}
             <div class="media">
                 <div class="media-body">
-                    <h3 class="media-heading">
+                    <h2 class="media-heading">
                         <a href="{{ path('post', {slug: post.slug}) }}">{{ post.title }}</a>
-                    </h3>
+                    </h2>
                     <small>{{ post.date|date('d.m.Y H:i') }}</small>
                 </div>
             </div>
